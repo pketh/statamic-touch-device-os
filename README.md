@@ -1,7 +1,9 @@
 # Statamic Get Touch Device OS plugin
 A plugin for Statamic that returns the user's touch device type. At FreshBooks, we use this for displaying the most relevant messaging for the user (i.e. "Download on the App Store" vs "Signup for the Web App").
 
-Only your imagination is the limit! :rainbow:
+Only your imagination is the limit! 
+
+:rainbow:
 
 ## Installing
 - Copy the `accessibility` folder into your `/_add-ons/`
