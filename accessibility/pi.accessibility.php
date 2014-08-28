@@ -13,10 +13,11 @@ class Plugin_accessibility extends Plugin
 {
 	public function touchDeviceOS() {
 		$touchDeviceOS = null;
-		$iPod    = stripos($_SERVER['HTTP_USER_AGENT'],"iPod");
-		$iPhone  = stripos($_SERVER['HTTP_USER_AGENT'],"iPhone");
-		$iPad    = stripos($_SERVER['HTTP_USER_AGENT'],"iPad");
-		$Android = stripos($_SERVER['HTTP_USER_AGENT'],"Android");
+		$userAgent = $_SERVER['HTTP_USER_AGENT'];
+		$iPod    = stripos($userAgent,"iPod");
+		$iPhone  = stripos($userAgent,"iPhone");
+		$iPad    = stripos($userAgent,"iPad");
+		$Android = stripos($userAgent,"Android");
 		if ($iPod || $iPhone || $iPad) {
 			$touchDeviceOS = 'iOS';
 		}
